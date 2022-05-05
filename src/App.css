@@ -1,0 +1,256 @@
+@media (min-width: 576px) {
+    .card-deck .card {
+        flex: 0 0;
+    }
+
+    .user-list-card {
+        min-width: 600px;
+        flex-flow: row;
+        display: flex;
+        height: 100%;
+    }
+}
+
+.tmdb-info-homepage {
+    text-align: center;
+    color: rgb(68, 68, 68);
+}
+
+.login-view {
+    border: 1px solid black;
+}
+
+.nav-moview {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+    color: rgb(179, 221, 248) !important;
+}
+.nav-discover {
+    margin-left: 2em;
+    font-size: 2em;
+    color: rgb(223, 223, 223) !important;
+}
+.nav-discover:hover {
+    color: #fff !important;
+    font-size: 2.02em;
+}
+
+.movie-results-card:hover {
+    -moz-box-shadow: 0 0 3px 3px rgb(81, 152, 199);
+    -webkit-box-shadow: 0 0 3px 3px rgb(81, 152, 199);
+    box-shadow: 0 0 3px 3px rgb(81, 152, 199);
+    text-decoration: none;
+}
+.movie-card-rating-text {
+    display: inline-block;
+    font-size: 0.7em;
+    color: grey;
+}
+/* .movie-card-link {
+    margin-top: 10px;
+    height: 200px;
+} */
+.movie-card-link:hover {
+    text-decoration: none;
+}
+
+.movie-details-rating-hover {
+    margin-left: 0.5em;
+    font-size: 1.5em;
+    color: rgb(110, 107, 107);
+}
+.rating-button-hide {
+    display: none;
+}
+.rating-list-remove-link:hover {
+    border: 1px solid white;
+}
+
+.popular.row {
+    min-height: 480px;
+}
+
+.popular > div {
+    /* background-color: rgb(156, 50, 50); */
+    min-width: 100%;
+    min-height: 420px;
+    max-height: 560px;
+    flex-flow: column wrap;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.popular.person {
+    margin-top: 1em;
+}
+
+.popular.person > div {
+    /* background-color: rgb(156, 50, 50); */
+    min-height: 350px;
+    max-height: 500px;
+}
+.popular.person > div > div {
+    /* background-color: #e74c3c; */
+    min-width: 150px;
+    margin: 5px;
+}
+
+.popular.row > div.disable-scroll {
+    overflow: hidden;
+}
+
+.popular.row > div::-webkit-scrollbar {
+    display: none;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+    font-size: medium;
+}
+
+.popular > div > div {
+    /* background-color: #e74c3c; */
+    min-width: 200px;
+    margin: 5px;
+}
+
+.searchbar {
+    width: 100%;
+    padding: 2em;
+    margin: 0 1em 0 0;
+    height: 450px;
+    background-image: url(./images/searchBackground.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+}
+
+.text-center {
+    margin-left: -1em;
+}
+
+.searchbar > form {
+    width: 100%;
+}
+
+.vote-average {
+    color: #f57906;
+    display: inline;
+}
+
+.card {
+    min-width: 200px;
+}
+
+.user-list-card {
+    min-width: 600px;
+    flex-flow: row;
+    display: flex;
+    height: 100%;
+}
+
+.user-list-card-img {
+    flex-shrink: 0;
+    width: 8em;
+    height: 100%;
+    object-fit: fill;
+    /* margin-left: -3.4em;
+    margin-right: -3.4em; */
+}
+
+.characters {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+ul {
+    display: flex;
+    padding-left: 0px;
+}
+
+li {
+    margin: 1em;
+    justify-content: center;
+}
+
+.director {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.input-group-append > button {
+    color: rgb(10, 10, 10);
+    background-color: #847b70;
+}
+
+/* AVATAR */
+:root {
+    --avatar-size: 48px; /* em will not center the letters */
+    /* change this value anything, e.g., 100px, 10rem, etc. */
+}
+.avatar-circle {
+    background-color: #0069d9;
+    border-radius: 50%;
+    height: var(--avatar-size);
+    text-align: center;
+    width: var(--avatar-size);
+    display: grid;
+}
+.avatar-circle:hover {
+    cursor: pointer;
+    border: 2px solid rgb(150, 195, 247);
+}
+
+.initials {
+    font-size: calc(var(--avatar-size) / 2); /* 50% of parent */
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    top: calc(var(--avatar-size) / 4); /* 25% of parent */
+    color: white;
+}
+
+.dropdown-menu {
+    position: initial;
+}
+
+/* Alert */
+.alert.movie-list {
+    position: absolute;
+    left: calc(55vw - 150px);
+    top: -60px;
+    transition: background 0.5s;
+    z-index: 1;
+}
+
+/* LoginPresentation */
+
+.red-text.center {
+    color: red;
+}
+
+/* form{
+    padding: 20px;
+    margin-top: 60px;
+  }
+  
+  form button, form h5{
+    margin: 20px 0;
+  }
+  
+  input[type=text]:not(.browser-default):focus:not([readonly]),
+  input[type=email]:not(.browser-default):focus:not([readonly]),
+  input[type=password]:not(.browser-default):focus:not([readonly]),
+  textarea.materialize-textarea:focus:not([readonly]){
+    border-color: #ec407a;
+    box-shadow: none;
+  }
+  
+  input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+  textarea.materialize-textarea:focus:not([readonly]) + label,
+  input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+  input[type=password]:not(.browser-default):focus:not([readonly]) + label{
+    color: #ec407a !important;
+  } */
