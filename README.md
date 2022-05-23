@@ -10,9 +10,9 @@
 * August Ronne, aronne@kth.se / augustronne@yahoo.se
 
 #### About the Course ####
-[Visit course page at KTH.se][https://www.kth.se/student/kurser/kurs/DH2642]
+[Visit course page at KTH.se](https://www.kth.se/student/kurser/kurs/DH2642)<br />
 The course aims to teach students to develop interactive web applications, with the main focus being the application frontend and its user interactions.
-The coursework consists of four labs and a more extensive project. Both the labs and the projects are carried out in pairs.
+The coursework consists of four labs and a more extensive project. Students work in pairs when developing the software required for passing the labs and the project.
 
 Some of the course contents listed at its introductory page are:
 * JavaScript for interaction programming, callbacks, synchronous and asynchronous code, functional programming.
@@ -31,3 +31,11 @@ The learning outcomes are as follows:
 * cooperate with others to implement interactive web applications.
 
 #### About the Application ####
+The MoView application helps its registered users to find movies and TV series either by searching for them by name or filtering by parameters such as year, genre etc. The user can also add media to their personal watchlist, as well as rate the media they have watched. Unregistered users can still access the app and use it to find movies and TV series, but they cannot access the watchlist or rate functionalities. 
+
+The app gets all its movie and TV series data from The Movie Database (TMDb). You can visit their website on:
+https://www.themoviedb.org <br />
+
+#### Application Structure ####
+The app is built using React, Redux, and React Redux along with Firebase Firestore, and Firebase Auth. Styling is implemented using Bootstrap and React Bootstrap.
+Firebase is used to host the app, as well as authenticating and storing the app users. React -- unlike for example Angular -- is a library and not a framework, and is therefore very unopinionated. Since all coursework uses a simple Model-View-Controller architecture as a compromise in order to facilitate students with a diverse set of backgrounds, a similar architectural solutions was used for this project. 
